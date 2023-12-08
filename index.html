@@ -194,7 +194,6 @@
 
         function calcularMediaRecuperacao() {
     var mf = parseFloat(document.getElementById("mf").value);
-
     var customAlert = document.getElementById("customAlert");
 
     if (isNaN(mf)) {
@@ -202,7 +201,10 @@
     } else {
         var mftotal = 6;
         var AV = (2.5 * mftotal - mf) / 1.5;
-        var resultado = AV.toFixed(2);  // Limita o resultado a três casas decimais
+
+        // Verifica se AV é menor ou igual a 6 e ajusta o resultado
+        var resultado = AV <= 6 ? 0 : AV.toFixed(2);
+
         showAlert("Você precisará de: <strong>" + resultado + "</strong> pontos");
     }
 
