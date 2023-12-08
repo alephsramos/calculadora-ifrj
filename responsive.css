@@ -1,5 +1,75 @@
 @media only screen and (max-width: 375px){
+    .login-box {
+        width: 80%;
+        padding: 30px;
+    }
+    
+    .login-box h2 {
+        margin: 0 0 30px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #2f9e40;
+    }
+    
+    
+    .login-box .user-box input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .login-box form button {
+        padding: 10px 20px;
+        font-size: 10px;
+        margin-top: 40px;
+        letter-spacing: 4px;
+    }
+    
 
+    
+    #tipo_calculo {
+        padding: 7px;
+        width: 100%;
+        margin: 10%;
+        margin-left: 0;
+    }
+    
+    .ifrj-container {
+        margin-top: 1%;
+        height: 10vh;
+        margin-bottom: 5%;
+    }
+    
+    .ifrj {
+        width: 9vh;
+        height: auto;
+    }
+    
+    .autor {
+        font-size: 0.4rem;
+        opacity: 0.8;
+        width: 100%;
+        letter-spacing: 2px;
+        margin-left: -5%;
+        margin-top: 140%;
+    }
+    
+    .tutorial {
+        font-size: 0.5rem;
+        opacity: 0.8;
+        letter-spacing: 2px;
+        padding: 20px;
+    }
+    
+    #customAlert {
+        top: 35%;
+        width: 35vh;
+        padding: 5px;
+        font-size: 0.7rem;
+        border-radius: 5px;
+    }
 }
 
 @media only screen and (min-width: 376px) and (max-width: 650px){
