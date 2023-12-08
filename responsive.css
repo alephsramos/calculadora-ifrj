@@ -48,12 +48,9 @@
     }
     
     .autor {
+        opacity: 1;
         font-size: 0.4rem;
-        opacity: 0.8;
-        width: 100%;
-        letter-spacing: 2px;
-        margin-left: -5%;
-        margin-top: 140%;
+        bottom: -10%;
     }
     
     .tutorial {
@@ -124,11 +121,6 @@
     
     .autor {
         font-size: 0.5rem;
-        opacity: 0.8;
-        width: 100%;
-        letter-spacing: 2px;
-        margin-left: -2%;
-        margin-top: 112%;
     }
     
     .tutorial {
@@ -200,11 +192,6 @@
     
     .autor {
         font-size: 0.8rem;
-        opacity: 0.8;
-        width: 100%;
-        letter-spacing: 2px;
-        margin-left: -2%;
-        margin-top: 92%;
     }
     
     .tutorial {
@@ -276,11 +263,6 @@
     
     .autor {
         font-size: 0.8rem;
-        opacity: 0.8;
-        width: 100%;
-        letter-spacing: 2px;
-        margin-left: -1%;
-        margin-top: 42%;
     }
     
     .tutorial {
