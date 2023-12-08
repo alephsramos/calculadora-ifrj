@@ -97,10 +97,7 @@
                     <form action="/calcular_media_recuperacao" method="post" id="calcularmediarecuperacao">
                         <!-- Adicione opções específicas para a média recuperação aqui, se necessário -->
                         <div class="user-box">
-                            <input type="number" name="mf" id="mf" required min="0" max="10" step="0.01" placeholder="Média Final: (G)">
-                        </div>
-                        <div class="user-box">
-                            <input type="number" name="mftotal" id="mftotal" required min="0" max="10" step="0.01" placeholder="Média Final Necessária: (GF)">
+                            <input type="number" name="mf" id="mf" required min="0" max="10" step="0.01" placeholder="Média Final:">
                         </div>
                         <button id="calcularmediarecuperacao" type="button" onclick="calcularMediaRecuperacao()">Calcular</button>
                     </form>
@@ -197,13 +194,13 @@
 
         function calcularMediaRecuperacao() {
     var mf = parseFloat(document.getElementById("mf").value);
-    var mftotal = parseFloat(document.getElementById("mftotal").value);
 
     var customAlert = document.getElementById("customAlert");
 
-    if (isNaN(mf) || isNaN(mftotal)) {
+    if (isNaN(mf)) {
         showAlert("Digite os valores corretos");
     } else {
+        var mftotal = 6;
         var AV = (2.5 * mftotal - mf) / 1.5;
         var resultado = AV.toFixed(2);  // Limita o resultado a três casas decimais
         showAlert("Você precisará de: <strong>" + resultado + "</strong> pontos");
