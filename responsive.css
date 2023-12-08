@@ -62,7 +62,7 @@
     
     #customAlert {
         top: 35%;
-        width: 35vh;
+        width: 25vh;
         padding: 5px;
         font-size: 0.7rem;
         border-radius: 5px;
@@ -133,7 +133,7 @@
     
     #customAlert {
         top: 35%;
-        width: 45vh;
+        width: 35vh;
         padding: 10px;
         font-size: 0.9rem;
         border-radius: 5px;
@@ -204,7 +204,7 @@
     
     #customAlert {
         top: 36%;
-        width: 35vh;
+        width: 65%;
         padding: 13px;
         font-size: 1.2rem;
         border-radius: 5px;
