@@ -145,7 +145,7 @@
                 return;
             }
 
-            var resultado = v1 + v2;
+            var resultado = (v1 + v2) / 2;
             showAlert("Sua média é de: <strong>" + resultado + "</strong> pontos");
         }
 
@@ -171,7 +171,7 @@
         }
 
         var md2 = (18 - md1) / 2;
-        var v2 = md2 - v1;
+        var v2 = (md2 * 2 - v1);
 
         var resultado = v2;
         showAlert("Você precisará de: <strong>" + resultado + "</strong> pontos");
