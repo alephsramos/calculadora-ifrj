@@ -195,7 +195,7 @@
         
 
 
-    function calcularMediaRecuperacao() {
+        function calcularMediaRecuperacao() {
     var mf = parseFloat(document.getElementById("mf").value);
     var mftotal = parseFloat(document.getElementById("mftotal").value);
 
@@ -205,7 +205,7 @@
         showAlert("Digite os valores corretos");
     } else {
         var AV = (2.5 * mftotal - mf) / 1.5;
-        var resultado = AV;
+        var resultado = AV.toFixed(2);  // Limita o resultado a três casas decimais
         showAlert("Você precisará de: <strong>" + resultado + "</strong> pontos");
     }
 
