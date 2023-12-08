@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
 /* static/style.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
     overflow-y: hidden;
-    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
- 
-  .login-box {
+
+.login-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,24 +19,24 @@ body {
     transform: translate(-50%, -50%);
     background: rgb(255, 255, 255);
     box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
-  }
-  
-  .login-box h2 {
+}
+
+.login-box h2 {
     margin: 0 0 30px;
     font-size: 2rem;
     padding: 0;
     font-weight: 400;
     color: #2f9e40;
     text-align: center;
-  }
-  
-  .login-box .user-box {
+}
+
+.login-box .user-box {
     position: relative;
-  }
-  
-  .login-box .user-box input {
+}
+
+.login-box .user-box input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -48,10 +46,11 @@ body {
     border-bottom: 1px solid #2f9e40;
     outline: none;
     background: transparent;
-  }
-  .login-box .user-box label {
+}
+
+.login-box .user-box label {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     padding: 10px 0;
     opacity: 0.7;
@@ -59,17 +58,17 @@ body {
     color: #000000;
     pointer-events: none;
     transition: .5s;
-  }
-  
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
     color: #2f9e40;
     font-size: 12px;
-  }
-  
-  .login-box form button {
+}
+
+.login-box form button {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -81,10 +80,10 @@ body {
     overflow: hidden;
     transition: .2s;
     margin-top: 40px;
-    letter-spacing: 4px
-  }
-  
-  .login-box button:hover {
+    letter-spacing: 4px;
+}
+
+.login-box button:hover {
     background: #2f9e40;
     color: #ffffff;
     border-radius: 5px;
@@ -92,10 +91,10 @@ body {
                 0 0 10px #2f9e40,
                 0 0 10px #2f9e40,
                 0 0 10px #2f9e40;
-                border: none;
-  }
+    border: none;
+}
 
-  button{
+button {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -107,110 +106,101 @@ body {
     overflow: hidden;
     transition: .2s;
     margin-top: 40px;
-    letter-spacing: 4px
-  }
-  
-  .login-box button span {
+    letter-spacing: 4px;
+}
+
+.login-box button span {
     position: absolute;
     display: block;
-  }
-  
+}
 
-  
-
-  p{
+p {
     text-align: center;
     padding: 15px;
     margin-bottom: -10%;
     color: rgb(0, 0, 0);
-  }
-
-    b{
-        color: #2f9e40;
-    }
-
-    .verde{
-        color: green;
-    }
-
-    .vermelho{
-        color: red;
-    }
-
-    #tipo_calculo {
-      padding: 5px;
-      width: 100%;
-      margin: 15%;
-      margin-left: 0;
-      border-color: #000000;    
-      background-color: transparent;
-      color: #000000;
-      transition: color 0.3s; /* Adicionando transição para suavizar a mudança de cor */
-  }
-  
-  #tipo_calculo option {
-    background-color: rgb(255, 255, 255);/* Sua cor de fundo para opções */;
-    border-top: none;
-    color: rgb(0, 0, 0); /* Sua cor de texto para opções */;
-    font-family: 'Montserrat', sans-serif;
-   
 }
 
-/* Estilizar a opção selecionada */
+b {
+    color: #2f9e40;
+}
+
+.verde {
+    color: green;
+}
+
+.vermelho {
+    color: red;
+}
+
+#tipo_calculo {
+    padding: 5px;
+    width: 100%;
+    margin: 15%;
+    margin-left: 0;
+    border-color: #000000;
+    background-color: transparent;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+#tipo_calculo option {
+    background-color: rgb(255, 255, 255);
+    border-top: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+}
+
 #tipo_calculo option:checked {
-    background-color: #2f9e40;/* Sua cor de fundo para opção selecionada */;
-    color: rgb(255, 255, 255); /* Sua cor de texto para opção selecionada */;
+    background-color: #2f9e40;
+    color: rgb(255, 255, 255);
 }
 
 #tipo_calculo option:hover {
-  background-color: rgb(255, 0, 0);/* Sua cor de fundo ao passar o mouse */;
-  color: rgb(255, 0, 0);/* Sua cor de texto ao passar o mouse */;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
 }
 
 .ifrj-container {
-  display: flex;
-  align-items: center;
-  margin-top: -5%;
-  justify-content: center;
-  height: 10vh;
-  margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    margin-top: -5%;
+    justify-content: center;
+    height: 10vh;
+    margin-bottom: 5%;
 }
 
 .ifrj {
-  width: 10vh;
-  height: auto;
+    width: 10vh;
+    height: auto;
 }
 
-.autor{
-  font-size: 0.6rem;
-  opacity: 0.8;
-  letter-spacing: 2px;
-  margin-top: 50%;
-  margin-left: 90%;
-  color: #000000;
-  float: right;
+.autor {
+    font-size: 0.6rem;
+    opacity: 0.8;
+    width: 100%;
+    letter-spacing: 2px;
+    margin-top: 50%;
+    color: #000000;
 }
 
-#resultado{
-  font-size: 1.2rem;
-  margin: 2%;
-
+#resultado {
+    font-size: 1.2rem;
+    margin: 2%;
 }
 
-#resultado b{
-  color:  #2f9e40;
+#resultado b {
+    color: #2f9e40;
 }
 
-.tutorial{
-  text-align: center;
-  font-size: 0.6rem;
-  opacity: 0.8;
-  letter-spacing: 2px;
-  color: #000000;
-  padding: 20px;
-
+.tutorial {
+    text-align: center;
+    font-size: 0.6rem;
+    opacity: 0.8;
+    letter-spacing: 2px;
+    color: #000000;
+    padding: 20px;
 }
-
 
 #customAlert {
     display: none;
@@ -223,7 +213,7 @@ body {
     box-shadow: 1px 1px 10px 1px #2f9e40;
     background-color: #2f9e40;
     color: #ffffff;
-    padding: 10px;  
+    padding: 10px;
     border-radius: 5px;
 }
 
