@@ -13,7 +13,7 @@
     <body>
 
         
-        <p class="tutorial">Só serão aceitos valores de 0 - 10 no <b>resultado final</b>, caso ultrapasse, divida suas notas por 2 e tente novamente.</p>
+        <p class="tutorial">Só serão aceitos valores de 0 - 10 no <b>resultado final</b>.</p>
         
         <div class="login-box">
             <div class="ifrj-container">
@@ -94,21 +94,23 @@
         
                 <!-- Opções específicas para o estilo "media_recuperacao" -->
                 <div class="opcoes_media_recuperacao opcoes" style="display: none;">
-                    <form action="/calcular_media_recuperacao" method="post">
+                    <form action="/calcular_media_recuperacao" method="post" id="calcularmediarecuperacao">
                         <!-- Adicione opções específicas para a média recuperação aqui, se necessário -->
                         <div class="user-box">
-                            <input type="text" name="md1" id="md1" required>
-                            <label for="md1">Média 1:</label>
+                            <input type="number" name="mf" id="mf" required min="0" max="10" step="0.01" placeholder="Média Final: (G)">
                         </div>
                         <div class="user-box">
-                            <input type="text" name="md2" id="md2" required>
-                            <label for="md2">Média 2:</label>
+                            <input type="number" name="mftotal" id="mftotal" required min="0" max="10" step="0.01" placeholder="Média Final Necessária: (GF)">
                         </div>
-                        <button type="button" id="calcular_media_recuperacao">Calcular</button>
+                        <button id="calcularmediarecuperacao" type="button" onclick="calcularMediaRecuperacao()">Calcular</button>
                     </form>
     
                 </div>
+
+                <div id="customAlert"></div>
         
+
+
             </form>
             <p class="autor">Produzido por: <b>Aleph Ramos e Alice Pereira</b></p>
         </div>
@@ -188,6 +190,36 @@
                 customAlert.style.display = "none";
             }, 3000); // Oculta o alert após 3 segundos (pode ajustar conforme necessário)
         }}
+
+
+        
+
+
+    function calcularMediaRecuperacao() {
+    var mf = parseFloat(document.getElementById("mf").value);
+    var mftotal = parseFloat(document.getElementById("mftotal").value);
+
+    var customAlert = document.getElementById("customAlert");
+
+    if (isNaN(mf) || isNaN(mftotal)) {
+        showAlert("Digite os valores corretos");
+    } else {
+        var AV = (2.5 * mftotal - mf) / 1.5;
+        var resultado = AV;
+        showAlert("Você precisará de: <strong>" + resultado + "</strong> pontos");
+    }
+
+    function showAlert(message) {
+            var customAlert = document.getElementById("customAlert");
+            customAlert.innerHTML = message;
+            customAlert.style.display = "block";
+
+            setTimeout(function () {
+                customAlert.style.display = "none";
+            }, 3000); // Oculta o alert após 3 segundos (pode ajustar conforme necessário)
+        }}
+
+
 
         
 
