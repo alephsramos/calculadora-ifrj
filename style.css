@@ -10,6 +10,34 @@ body {
     overflow-x: hidden;
 }
 
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode h2{
+    color: white;
+}
+
+body.dark-mode p{
+    color: white;
+}
+
+body.dark-mode .login-box{
+    background: #333;
+}
+
+body.dark-mode input label{
+    color: white;
+
+} 
+
+body.dark-mode #tipo_calculo{
+    color: white;
+    border-color: white;
+}
+
+
 .login-box {
     position: absolute;
     top: 50%;
@@ -31,6 +59,7 @@ body {
     color: #2f9e40;
     text-align: center;
 }
+
 
 .login-box .user-box {
     position: relative;
@@ -241,4 +270,20 @@ b {
     padding: 30px;
     padding-left: 0;
     padding-right: 0;
+}
+
+body.dark-mode #toggle-theme{
+    color: white;
+    background: black;
+    border-color: white;
+}
+
+#toggle-theme{
+    position: absolute;
+    margin: 5%;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
 }

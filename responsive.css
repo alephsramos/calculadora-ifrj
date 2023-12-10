@@ -74,6 +74,23 @@
         padding-left: 0;
         padding-right: 0;
     }
+
+    #toggle-theme{
+        position: absolute;
+        top: 35%;
+        margin-left: 0;
+        z-index: 1000;
+        border-radius: 10px;
+        padding: 5px;
+        opacity: 0.5;
+        width: 1vh;
+        height: 15%;
+        font-size: 0;
+        color: rgb(0, 0, 0);
+
+        background: rgb(255, 255, 255);
+        border-color: rgb(0, 0, 0);
+    }
 }
 
 @media only screen and (min-width: 376px) and (max-width: 650px){

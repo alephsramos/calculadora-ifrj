@@ -12,6 +12,8 @@
     </head>
     <body>
 
+        <button id="toggle-theme">Mudar Tema</button> 
+
         
         <p class="tutorial">O <b>SIGAA</b> arredonda os valores, então aqui você terá apenas uma média aproximada!<br>Informe apenas números de <b style="color: crimson;">0 a 10.</b></p>
         
@@ -22,7 +24,7 @@
             <h2>Calculadora IFRJ</h2>
             <form action="/calcular" method="post">
                 <div class="user-box">
-                    <select name="tipo_calculo" id="tipo_calculo" onchange="mostrarOpcoes()" required>
+                    <select class="select" name="tipo_calculo" id="tipo_calculo" onchange="mostrarOpcoes()" required>
                         <option value="" selected disabled>Selecione uma opção</option>
                         <option value="media">Média bimestral (estilo 1)</option>
                         <option value="media2">Média bimestral (estilo 2)</option>
@@ -319,7 +321,7 @@
 
             setTimeout(function () {
                 customAlert.style.display = "none";
-            }, 20000); // Oculta o alert após 3 segundos (pode ajustar conforme necessário)
+            }, 15000); // Oculta o alert após 3 segundos (pode ajustar conforme necessário)
         }}
 
 
@@ -379,7 +381,24 @@ function showAlert(message) {
 
 
 
+        document.getElementById('toggle-theme').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    
+    // Salvar a preferência do usuário (opcional)
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+});
 
+// Verificar a preferência do usuário ao carregar a página
+document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+});
 
         
 
