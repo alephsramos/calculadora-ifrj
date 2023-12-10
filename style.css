@@ -275,12 +275,14 @@ b {
 body.dark-mode #toggle-theme{
     color: white;
     background: black;
-    border-color: white;
+    border-color: none;
+    box-shadow: 1px 1px 10px 1px white;
 }
 
 #toggle-theme{
 
     color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);
-    border-color: rgb(0, 0, 0);
+    border-color: none;
+    box-shadow: 1px 1px 10px 1px black;
 }
