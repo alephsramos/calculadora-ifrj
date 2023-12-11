@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+ <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -186,7 +186,7 @@
             }
 
             var resultado = (v1 + v2) / 2;
-            showAlert("Sua média é de: <strong>" + resultado + "pontos</strong> ");
+            showAlert("Sua média é de <strong>" + resultado + " pontos</strong> ");
         }
 
         function showAlert(message) {
@@ -209,7 +209,7 @@
                 return;
             }
             var resultado = (v1 + v2);
-            showAlert("Sua média é de: <strong>" + resultado + " pontos</strong>");
+            showAlert("Sua média é de <strong>" + resultado + " pontos</strong>");
         }
 
         function showAlert(message) {
@@ -238,7 +238,7 @@
         var v2 = (md2 * 2 - v1);
 
         var resultado = Math.max(0, v2).toFixed(2); 
-        showAlert("Você precisará de: <strong>" + resultado + " pontos </strong>na V2");
+        showAlert("Você precisará de <strong>" + resultado + " pontos </strong>na V2");
 
 
 
@@ -267,7 +267,7 @@
         var v2 = (md2 - v1);
 
         var resultado = Math.max(0, v2).toFixed(2); 
-        showAlert("Você precisará de: <strong>" + resultado + " pontos</strong> na V2");
+        showAlert("Você precisará de <strong>" + resultado + " pontos</strong> na V2");
 
 
 
@@ -307,9 +307,9 @@
 
     // Exibir o resultado com a cor determinada e status de aprovação
     if (resultado <= 6) {
-        showAlert("Você já está aprovado com uma média de: <strong>" + mf + " pontos</strong>, parabéns!");
+        showAlert("Você já está aprovado com uma média de <strong>" + mf + " pontos</strong>, parabéns!");
     } else {
-        showAlert("Você precisará de: <strong>" + resultado + "pontos </strong>na média. Caso sejam <strong>duas avaliações de 0 a 10</strong>, você precisará tirar pelo menos: <strong>" + estilo2 + " pontos</strong> em cada uma das avaliações. Agora, se for duas avaliações que <strong>juntas somam 10 pontos</strong>, você precisará tirar pelo menos: <strong>" + estilo1 + " pontos</strong> em cada uma das avaliações.");
+        showAlert("Você precisará de <strong>" + resultado + " pontos</strong>na média. Caso sejam <strong>duas avaliações de 0 a 10</strong>, você precisará tirar pelo menos <strong>" + estilo2 + " pontos</strong> em cada uma. Agora, se for duas avaliações que <strong>juntas somam 10 pontos</strong>, você precisará tirar pelo menos <strong>" + estilo1 + " pontos</strong> em cada uma.");
     }
 
        
@@ -354,7 +354,7 @@
     if (media >= 6) {
         showAlert("APROVADO! Média: <strong style='color: " + cor + "'>" + resultado + " pontos</strong>");
     } else {
-        showAlert("Sinto muito, você está reprovado! Média: <strong style='color: crimson;'>" + resultado + " pontos </strong>");
+        showAlert("Sinto muito, você está de férias recuperação! Média: <strong style='color: crimson;'>" + resultado + " pontos </strong>");
     }
 }
 
