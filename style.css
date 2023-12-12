@@ -286,3 +286,65 @@ body.dark-mode #toggle-theme{
     border-color: none;
     box-shadow: 1px 1px 10px 1px black;
 }
+
+
+.escolha {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.links {
+    text-align: center; /* Centraliza os links horizontalmente */
+}
+
+.links a {
+    display: inline-block; /* Torna os links em linha um ao lado do outro */
+    margin: 0 90px; /* Adapte a margem conforme necessário */
+    text-decoration: none;
+    margin-top: 5%;
+    color: #2f9e40;
+    font-size: 2rem;
+}
+
+.semestre,
+.anual {
+    display: inline-block; /* Torna os elementos com as classes em linha um ao lado do outro */
+    margin: 0 10px; /* Adapte a margem conforme necessário */
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.semestre{
+    border: 1px solid #2f9e40;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 1px 1px 10px 1px #2f9e40;
+    transition: transform 0.2s ease-in-out;
+}
+
+.anual{
+    border: 1px solid #2f9e40;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 1px 1px 10px 1px #2f9e40;
+    transition: transform 0.7s ease-in-out;
+}
+
+.semestre:hover, .anual:hover{
+    transform: scale(1.1);
+    background: #2f9e40;
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #2f9e40,
+                0 0 10px #2f9e40,
+                0 0 10px #2f9e40,
+                0 0 10px #2f9e40;
+    border: none;
+}
