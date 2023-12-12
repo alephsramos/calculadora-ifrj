@@ -288,16 +288,10 @@ body.dark-mode #toggle-theme{
 }
 
 
-.escolha {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 .links {
     text-align: center; /* Centraliza os links horizontalmente */
+    display: none;
 }
 
 .links a {
