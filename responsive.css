@@ -90,6 +90,59 @@
         background: rgb(255, 255, 255);
         border-color: rgb(0, 0, 0);
     }
+
+    .escolha {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .links {
+        text-align: center; /* Centraliza os links horizontalmente */
+    }
+    
+
+    .links a {
+        display: inline-block; /* Torna os links em linha um ao lado do outro */
+        margin: 0 0px; /* Adapte a margem conforme necessário */
+        text-decoration: none;
+        margin-top: 5%;
+        color: #2f9e40;
+        font-size: 0.7rem;
+        margin-bottom: 5%;
+    }
+    
+    .semestre,
+    .anual {
+        display: inline-block; /* Torna os elementos com as classes em linha um ao lado do outro */
+        margin: 0 0px; /* Adapte a margem conforme necessário */
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+    }
+    
+    .semestre{
+        border: 1px solid #2f9e40;
+        border-radius: 10px;
+        padding-left: 20px;
+        width: 50%;
+        padding-right: 20px;
+        box-shadow: 1px 1px 5px 1px #2f9e40;
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .anual{
+        border: 1px solid #2f9e40;
+        border-radius: 10px;
+        padding-left: 20px;
+        width: 50%;
+        padding-right: 20px;
+        box-shadow: 1px 1px 5px 1px #2f9e40;
+        transition: transform 0.7s ease-in-out;
+    }
+
 }
 
 @media only screen and (min-width: 376px) and (max-width: 650px){
@@ -185,6 +238,46 @@
         background: rgb(255, 255, 255);
         border-color: rgb(0, 0, 0);
     }
+
+    .links a {
+        display: inline-block; /* Torna os links em linha um ao lado do outro */
+        margin: 0 0px; /* Adapte a margem conforme necessário */
+        text-decoration: none;
+        margin-top: 5%;
+        color: #2f9e40;
+        font-size: 0.7rem;
+        margin-bottom: 5%;
+    }
+    
+    .semestre,
+    .anual {
+        display: inline-block; /* Torna os elementos com as classes em linha um ao lado do outro */
+        margin: 0 0px; /* Adapte a margem conforme necessário */
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+    }
+    
+    .semestre{
+        border: 1px solid #2f9e40;
+        border-radius: 10px;
+        padding-left: 20px;
+        width: 50%;
+        padding-right: 20px;
+        box-shadow: 1px 1px 5px 1px #2f9e40;
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .anual{
+        border: 1px solid #2f9e40;
+        border-radius: 10px;
+        padding-left: 20px;
+        width: 50%;
+        padding-right: 20px;
+        box-shadow: 1px 1px 5px 1px #2f9e40;
+        transition: transform 0.7s ease-in-out;
+    }
+
 }
 
 @media only screen and (min-width: 651px) and (max-width: 1200px){
