@@ -48,7 +48,7 @@ body.dark-mode #tipo_calculo{
     background: rgb(255, 255, 255);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .login-box h2 {
