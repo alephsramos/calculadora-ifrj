@@ -309,7 +309,6 @@ body.dark-mode #toggle-theme{
     text-decoration: none;
     color: black;
     padding: 10px;
-    font-size: 1.5rem;
 }
 
 .semestre{
@@ -326,7 +325,7 @@ body.dark-mode #toggle-theme{
     border-radius: 10px;
     padding-left: 50px;
     padding-right: 50px;
-
+    
     transition: transform 0.7s ease-in-out;
 }
 
