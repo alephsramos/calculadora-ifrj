@@ -26,6 +26,7 @@
         padding: 8px 15px;
         font-size: 10px;
         margin-top: 5px;
+        margin-bottom: 5px;
         letter-spacing: 4px;
     }
     
@@ -35,7 +36,7 @@
         padding: 5px;
         width: 100%;
         margin: 10%;
-        font-size: 0.60rem;
+        font-size: 0.7rem;
         font-weight: 100;
         margin-left: 0;
     }
@@ -58,7 +59,7 @@
 
     .autor b{
         font-weight: 800;
-        color: black;
+        color: #333;
     }
     
     .tutorial {
@@ -69,7 +70,7 @@
     }
     
     #customAlert {
-        top: 35%;
+        top: 33%;
         width: 80%;
         padding: 10px;
         font-size: 0.7rem;
@@ -120,11 +121,6 @@
         text-align: center;
     }
     
-    .links {
-        text-align: center; /* Centraliza os links horizontalmente */
-    }
-    
-
     .links a {
         display: inline-block; /* Torna os links em linha um ao lado do outro */
         margin: 0 0;
@@ -165,7 +161,7 @@
 @media only screen and (min-width: 376px) and (max-width: 650px){
     .login-box {
         width: 70%;
-        padding: 25px;
+        padding: 20px;
     }
     
     .login-box h2 {
@@ -179,15 +175,15 @@
     .login-box .user-box input {
         width: 100%;
         padding: 10px 0;
-        font-size: 15px;
-        margin-bottom: 30px;
+        font-size: 16px;
+        margin-bottom: 15   px;
     }
     
     
     .login-box form button {
         padding: 10px 20px;
         font-size: 15px;
-        margin-top: 10px;
+        margin-top: 5px;
         letter-spacing: 4px;
     }
     
@@ -203,12 +199,12 @@
     
     .ifrj-container {
         margin-top: 0;
-        height: 13vh;
+        height: 12vh;
         margin-bottom: 5%;
     }
     
     .ifrj {
-        width: 13vh;
+        width: 12vh;
         height: auto;
     }
     
@@ -225,10 +221,10 @@
     }
     
     #customAlert {
-        top: 32%;
+        top: 30%;
         width: 80%;
         padding: 20px;
-        font-size: 1rem;
+        font-size: 1.1rem;
         border-radius: 5px;
     }
 
@@ -262,7 +258,6 @@
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: 800;
     }
-
     .links a {
         display: inline-block; /* Torna os links em linha um ao lado do outro */
         margin: 0 0;
@@ -346,7 +341,7 @@
     }
     
     .ifrj {
-        width: 14vh;
+        width: 12vh;
         height: auto;
     }
     
@@ -445,12 +440,12 @@
 @media only screen and (min-width: 1201px) and (max-width: 2800px){
     .login-box {
         width: 30%;
-        padding: 40px;
+        padding: 35px;
     }
     
     .login-box h2 {
-        margin: 50px 0 30px;
-        font-size: 1.3rem;
+        margin: 30px 0 30px;
+        font-size: 1.2rem;
         font-weight: 500;
         color: #2f9e40;
     }
@@ -466,7 +461,7 @@
     
     .login-box form button {
         padding: 10px 20px;
-        font-size: 15px;
+        font-size: 14px;
         margin-top: 20px;
         letter-spacing: 4px;
     }
@@ -488,7 +483,7 @@
     }
     
     .ifrj {
-        width: 15vh;
+        width: 14vh;
         height: auto;
     }
     
@@ -501,7 +496,7 @@
         opacity: 0.8;
         margin-top: 1%;
         letter-spacing: 2px;
-        padding: 20px;
+        padding: 10px;
     }
     
     #customAlert {
@@ -591,4 +586,6 @@
     }
     
 }
+
+
 

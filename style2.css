@@ -314,7 +314,7 @@ body.dark-mode #toggle-theme{
 
 .semestre{
     border: 1px solid #2f9e40;
-    border-radius: 0px;
+    border-radius: 10px;
     padding-left: 50px;
     padding-right: 50px;
 
@@ -323,9 +323,10 @@ body.dark-mode #toggle-theme{
 
 .anual{
     border: 1px solid #2f9e40;
-    border-radius: 0px;
+    border-radius: 10px;
     padding-left: 50px;
     padding-right: 50px;
+
     transition: transform 0.7s ease-in-out;
 }
 
@@ -341,12 +342,13 @@ body.dark-mode #normalimg {
     display: none;
 }
 
+
 body.dark-mode .links a{
     color: white;
     border-color: white;
 }
 
-body.dark-mode .semestre{
+body.dark-mode .anual{
     background: white !important;
     color: black !important;
 }
@@ -364,8 +366,8 @@ body.dark-mode #tipo_calculo option:checked{
 body.dark-mode .login-box button:hover {
     background: #ffffff;
     color: #333;
-    border-radius: 5px;
     font-weight: 600;
+    border-radius: 5px;
     box-shadow: 0 0 10px #ffffff,
                 0 0 10px #ffffff,
                 0 0 10px #ffffff,
