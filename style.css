@@ -162,6 +162,10 @@ b {
     color: red;
 }
 
+select{
+    border-radius: 0;
+}
+
 #tipo_calculo {
     padding: 5px;
     width: 100%;
